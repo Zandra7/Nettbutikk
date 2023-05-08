@@ -34,7 +34,7 @@ body {
     color: var(--svart);
 }
 
-/* - -- - --- NAVBAR --- - -- - */
+/* --- - -- - --- NAVBAR --- - -- - --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -68,6 +68,7 @@ h4 {
 .navbar2 div:nth-child(5) a{
     opacity: 0.5;
     cursor: default;
+    text-decoration: none;
 }
 
 .navbar2 a {
@@ -75,3 +76,15 @@ h4 {
     color: var(--svart);
     cursor: pointer;
 }
+
+.navbar2 a:hover {
+    text-decoration: underline;
+}
+
+.valgt {
+    color: var(--valgt);
+}
+
+/* .valgt:hover {
+    text-decoration-color: var(--valgt);
+} */
