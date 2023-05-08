@@ -1,0 +1,20 @@
+:root {
+    --hvit: #FFF;
+    --mLilla: #AC7DA0;
+    --lLilla: #F2D8F2;
+    --grå: #F3F3F3;
+    --svart: #000;
+    --valgt: #EF24A1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Bellefair', serif;
+    background-color: var(--hvit);
+    color: var(--svart);
+}
