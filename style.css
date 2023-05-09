@@ -85,9 +85,10 @@ h4 {
     color: var(--valgt);
 }
 
-/* .valgt:hover {
+.valgt:hover {
+    text-decoration: underline;
     text-decoration-color: var(--valgt);
-} */
+}
 
 .beholder {
     display: flex;
