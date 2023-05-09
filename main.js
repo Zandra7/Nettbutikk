@@ -31,6 +31,8 @@ function RemoveClass(element, name) {
     element.className = arr1.join(" ");
 }
 
+let kategori = "Alt"
+var kategoriSelect = document.getElementById("kategori").innerHTML = "kategori";
 var btnContainer = document.getElementById("navbar2");
 console.log("btnContainer", btnContainer)
 var btns = btnContainer.getElementsByClassName("navknapp");
@@ -40,6 +42,8 @@ for (var i = 0; i < btns.length; i++) {
         console.log("click", this)
         var current = document.getElementsByClassName("valgt");
         current[0].className = current[0].className.replace(" valgt", "");
+        // replace kategoriselect with the text of the button
+        kategoriSelect = document.getElementById("kategori").innerHTML = this.innerHTML;
         this.className += " valgt";
     });
 }
