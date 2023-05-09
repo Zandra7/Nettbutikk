@@ -81,20 +81,20 @@ h4 {
     text-decoration: underline;
 }
 
-.valgt {
+.navbar2 .navknapp.valgt {
     color: var(--valgt);
 }
 
-/* .valgt:hover {
+.navbar2 .navknapp.valgt:hover {
+    text-decoration: underline;
     text-decoration-color: var(--valgt);
-} */
+}
 
 .beholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     padding: 1em 1em 1em 0;
 }
 
@@ -120,12 +120,21 @@ main {
     justify-content: space-between;
 }
 
-/* .prod-og-handlevogn .maskeHandlevognd {
-    height: 2em;
-    width: auto;
-} */
-
 .prod-og-handlevogn h3 {
     font-size: 1.25em;
     margin: 0.5em 0 0 0;
+}
+
+/* --- - -- - --- FILTER --- - -- - --- */
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.valgt {
+    background-color: none;
+    color: var(--valgt);
 }
