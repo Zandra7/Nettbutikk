@@ -1,3 +1,4 @@
+/* - -- - -- -- - --- - VARIABLER - --- - -- -- - -- - */
 :root {
     --hvit: #FFF;
     --mLilla: #AC7DA0;
@@ -7,6 +8,20 @@
     --valgt: #EF24A1;
 }
 
+/* - -- - -- -- - --- - MASKER - --- - -- -- - -- - */
+.maskeLogo {
+    background-color: #000;
+    -webkit-mask: url(/bilder/logo.svg) no-repeat center;
+    mask: url(/bilder/logo.svg) no-repeat center;
+}
+
+.maskeHandlevogn {
+    background-color: #000;
+    -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
+    mask: url(/bilder/handlevogn.svg) no-repeat center;
+}
+
+/* - -- - -- -- - --- - GENERELT - --- - -- -- - -- - */
 * {
     margin: 0;
     padding: 0;
@@ -18,3 +33,58 @@ body {
     background-color: var(--hvit);
     color: var(--svart);
 }
+
+/* --- - -- - --- NAVBAR --- - -- - --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mLilla);
+}
+
+.svgBilde {
+    height: 4em;
+    width: auto;
+    margin: 0.5em;
+}
+
+.logo {
+    height: 3em;
+}
+
+.navbar2{
+    display: flex; 
+    justify-content: left;
+    background-color: var(--lLilla);
+}
+
+.navbar2 div {
+    padding: 0.5rem 0 0.5rem 6rem;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.navbar2 div:nth-child(5) a{
+    opacity: 0.5;
+    cursor: default;
+    text-decoration: none;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color: var(--svart);
+    cursor: pointer;
+}
+
+.navbar2 a:hover {
+    text-decoration: underline;
+}
+
+.valgt {
+    color: var(--valgt);
+}
+
+/* .valgt:hover {
+    text-decoration-color: var(--valgt);
+} */
