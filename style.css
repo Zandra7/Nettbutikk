@@ -88,3 +88,21 @@ h4 {
 /* .valgt:hover {
     text-decoration-color: var(--valgt);
 } */
+
+.beholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+}
+
+.produkt {
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--grå);
+}
+
+.navigasjon {
+    margin: 3em 0 2em 10em;
+}
