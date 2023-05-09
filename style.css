@@ -92,17 +92,40 @@ h4 {
 .beholder {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: 1em;
-    padding: 1em;
+    padding: 1em 1em 1em 0;
 }
 
 .produkt {
-    margin: 1em;
-    padding: 1em;
+    margin: 1em 2em 1em 0;
+    padding: 1rem;
     background-color: var(--grå);
 }
 
-.navigasjon {
-    margin: 3em 0 2em 10em;
+/* --- - -- - --- PRODUKTER --- - -- - --- */
+main {
+    margin: 4em 10vw 1em 10vw;
+}
+
+.prod-bilde {
+    padding: 1rem 0 0 0;
+    width: 12rem;
+}
+
+.prod-og-handlevogn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .prod-og-handlevogn .maskeHandlevognd {
+    height: 2em;
+    width: auto;
+} */
+
+.prod-og-handlevogn h3 {
+    font-size: 1.25em;
+    margin: 0.5em 0 0 0;
 }
