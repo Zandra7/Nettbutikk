@@ -19,6 +19,7 @@
     background-color: #000;
     -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
     mask: url(/bilder/handlevogn.svg) no-repeat center;
+    cursor: pointer;
 }
 
 /*______ Scrollehjul ______*/
@@ -82,7 +83,7 @@ body {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .navbar2 div:nth-child(5) a{
@@ -157,4 +158,32 @@ main {
 .valgt {
     background-color: none;
     color: var(--valgt);
+}
+
+/* - -- - -- -- - --- - HANDLEKURV - --- - -- -- - -- - */
+.handle-beholder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em 1em 1em 0;
+    width: 100%;
+}
+
+.kurv-produkt {
+    padding: 1.5rem;
+    border-top: 0.09rem solid var(--svart);
+}
+
+.kurv-produkt:last-child {
+    border-bottom: 0.09rem solid var(--svart);
+}
+
+.kjøp {
+    background-color: var(--lLilla);
+    border: none;
+    padding: 2.5vh 5vw;
+    font-family: 'Bellefair', serif;
+    font-size: 1rem;
+    margin-left: 62.8vw;
 }
