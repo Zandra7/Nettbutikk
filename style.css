@@ -175,6 +175,8 @@ main {
 }
 
 .kurv-produkt {
+    display: flex;
+    justify-content: space-between;
     padding: 1.5rem;
     border-top: 0.09rem solid var(--svart);
 }
