@@ -29,13 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function fjernAlt() {
     console.log("slettAlt")
-    var basket = [];
+    basket = [];
     console.log("basket", basket)
     updateCookies();
 }
 
 function updateCookies() {
-    console.log("updateCookies", basket)
-    document.cookie = "basket=" + encodeURIComponent(JSON.stringify(basket));
+    document.cookie = "basket=" + JSON.stringify(basket) + "; path=/";
 }
-
