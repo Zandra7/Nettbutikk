@@ -203,3 +203,14 @@ main {
 .handlekurv-ti {
     padding-bottom: 1rem;
 }
+
+.kurv-produkt div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Target produktet */
+.kurv-produkt h3:first-child {
+    min-width: 8rem;
+}
