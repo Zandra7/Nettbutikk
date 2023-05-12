@@ -72,14 +72,18 @@ body {
     height: 3em;
 }
 
-.navbar2{
+.navbar2 {
     display: flex; 
     justify-content: left;
     background-color: var(--lLilla);
 }
 
 .navbar2 div {
-    padding: 0.5rem 0 0.5rem 6rem;
+    padding: 0.5rem 0 0.5rem 6vw;
+}
+
+.navbar2 div a h4 {
+    font-size: 1.2rem;
 }
 
 h4 {
@@ -166,7 +170,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1em 1em 1em 0;
+    padding: 0 1rem 1rem 0;
     width: 100%;
 }
 
@@ -186,4 +190,14 @@ main {
     font-family: 'Bellefair', serif;
     font-size: 1rem;
     margin-left: 62.8vw;
+}
+
+.fjern-alt:hover {
+    display: inline;
+    cursor: pointer;
+    color:var(--valgt);
+}
+
+.handlekurv-ti {
+    padding-bottom: 1rem;
 }
