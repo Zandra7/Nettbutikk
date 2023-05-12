@@ -36,4 +36,5 @@ function fjernAlt() {
 
 function updateCookies() {
     document.cookie = "basket=" + JSON.stringify(basket) + "; path=/";
+    location.reload();
 }
