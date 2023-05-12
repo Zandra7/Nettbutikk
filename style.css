@@ -210,7 +210,13 @@ main {
     justify-content: space-between;
 }
 
-/* Target produktet */
+/* Velge produktet */
 .kurv-produkt h3:first-child {
     min-width: 8rem;
+}
+
+/* Velge prisen */
+.kurv-produkt h3:last-child {
+    min-width: 6rem;
+    text-align: right;
 }
