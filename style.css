@@ -250,18 +250,28 @@ main {
     width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    .prod-besk-beholder {
+        flex-direction: column;
+        justify-content: center;
+        margin-inline: auto;
+    }
+    
+}
+
 .pris {
     margin: 2rem 0 0.25rem 0;
+    font-size: 1.05rem;
 }
 
 .prod-p {
     text-align: left;
-    width: 80%;
+    width: 50%;
     margin: auto;   
 }
 
 .prod-p {
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .hjerte {
@@ -279,5 +289,9 @@ main {
 }
 
 .produkt-bilde {
-    padding: 0 2rem 0 0;
+    padding: 0 1.5rem 0 0;
+}
+
+.ikke-bilde {
+    padding: 0 0 0 1.5rem;
 }
