@@ -129,7 +129,12 @@ h4 {
     background-color: var(--grå);
 }
 
+
 .produkt a {
+    color: var(--svart);
+}
+
+a {
     text-decoration: none;
     color: var(--svart);
 }
@@ -140,7 +145,6 @@ main {
 }
 
 .prod-bilde {
-    padding: 1rem 0 0 0;
     width: 12rem;
 }
 
@@ -153,6 +157,7 @@ main {
 .prod-og-handlevogn h3 {
     font-size: 1.25em;
     margin: 0.5em 0 0 0;
+    text-decoration: none;
 }
 
 /* --- - -- - --- FILTER --- - -- - --- */
@@ -227,7 +232,7 @@ main {
     text-align: right;
 }
 
-/* --- - -- - --- BOKHYLLER --- - -- - --- */
+/* --- - -- - --- PRODUKT --- - -- - --- */
 .legg-til-handlekurv {
     background-color: var(--lLilla);
     border: none;
@@ -245,6 +250,48 @@ main {
     width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    .prod-besk-beholder {
+        flex-direction: column;
+        justify-content: center;
+        margin-inline: auto;
+    }
+    
+}
+
 .pris {
-    margin: 1.5rem 0 0.5rem 0;
+    margin: 2rem 0 0.25rem 0;
+    font-size: 1.05rem;
+}
+
+.prod-p {
+    text-align: left;
+    width: 50%;
+    margin: auto;   
+}
+
+.prod-p {
+    font-size: 1.05rem;
+}
+
+.hjerte {
+    height: 4rem;
+    width: auto;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.knapp-hj {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 0 0 0;
+}
+
+.produkt-bilde {
+    padding: 0 1.5rem 0 0;
+}
+
+.ikke-bilde {
+    padding: 0 0 0 1.5rem;
 }
