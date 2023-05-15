@@ -19,6 +19,27 @@
     background-color: #000;
     -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
     mask: url(/bilder/handlevogn.svg) no-repeat center;
+    cursor: pointer;
+}
+
+/*______ Scrollehjul ______*/
+/* Gjemmer bort scrollehjulet for Chrome, Safari og Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Gjemmer bort scrollehjulet for IE, Edge og Firefox */
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* - -- - -- -- - --- - GENERELT - --- - -- -- - -- - */
@@ -51,18 +72,22 @@ body {
     height: 3em;
 }
 
-.navbar2{
+.navbar2 {
     display: flex; 
     justify-content: left;
     background-color: var(--lLilla);
 }
 
 .navbar2 div {
-    padding: 0.5rem 0 0.5rem 6rem;
+    padding: 0.5rem 0 0.5rem 6vw;
+}
+
+.navbar2 div a h4 {
+    font-size: 1.2rem;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .navbar2 div:nth-child(5) a{
@@ -104,6 +129,11 @@ h4 {
     background-color: var(--grå);
 }
 
+.produkt a {
+    text-decoration: none;
+    color: var(--svart);
+}
+
 /* --- - -- - --- PRODUKTER --- - -- - --- */
 main {
     margin: 4em 10vw 1em 10vw;
@@ -137,4 +167,84 @@ main {
 .valgt {
     background-color: none;
     color: var(--valgt);
+}
+
+/* - -- - -- -- - --- - HANDLEKURV - --- - -- -- - -- - */
+.handle-beholder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem 1rem 0;
+    width: 100%;
+}
+
+.kurv-produkt {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-top: 0.09rem solid var(--svart);
+}
+
+.kurv-produkt:last-child {
+    border-bottom: 0.09rem solid var(--svart);
+}
+
+.kjøp {
+    background-color: var(--lLilla);
+    border: none;
+    padding: 2.5vh 5vw;
+    font-family: 'Bellefair', serif;
+    font-size: 1rem;
+    margin-left: 62.8vw;
+    cursor: pointer;
+}
+
+.fjern-alt:hover {
+    display: inline;
+    cursor: pointer;
+    color:var(--valgt);
+}
+
+.handlekurv-ti {
+    padding-bottom: 1rem;
+}
+
+.kurv-produkt div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Velge produktet */
+.kurv-produkt h3:first-child {
+    min-width: 8rem;
+}
+
+/* Velge prisen */
+.kurv-produkt h3:last-child {
+    min-width: 6rem;
+    text-align: right;
+}
+
+/* --- - -- - --- BOKHYLLER --- - -- - --- */
+.legg-til-handlekurv {
+    background-color: var(--lLilla);
+    border: none;
+    padding: 2.5vh 5vw;
+    font-family: 'Bellefair', serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.prod-besk-beholder {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.pris {
+    margin: 1.5rem 0 0.5rem 0;
 }

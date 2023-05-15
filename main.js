@@ -1,3 +1,36 @@
+let basket = [];
+
+document.addEventListener("DOMContentLoaded", function() {
+    function getExistingCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) {
+            return parts.pop().split(";").shift();
+        }
+    }
+
+    var basketCookie = getExistingCookie("basket");
+
+    if (!basketCookie) {
+        console.log("No 'basket' cookie found.");
+        return;
+    }
+
+    try {
+        let parsedBasket = JSON.parse(decodeURIComponent(basketCookie));
+    
+        if (Array.isArray(parsedBasket) && parsedBasket.length > 0) {
+            basket = parsedBasket;
+            console.log("Loaded items from 'basket' cookie:", basket);
+        } else {
+            console.log("No items found in 'basket' cookie.");
+        }
+    } catch (error) {
+        console.error("Error parsing 'basket' cookie:", error);
+    }    
+});
+
+
 function filterSelection(c) {
     var x, i;
     console.log("filterSelection", c)
@@ -32,7 +65,7 @@ function RemoveClass(element, name) {
 }
 
 let kategori = "Alt"
-var kategoriSelect = document.getElementById("kategori").innerHTML = "kategori";
+var kategoriSelect = document.getElementById("kategori").innerHTML = "Alt";
 var btnContainer = document.getElementById("navbar2");
 console.log("btnContainer", btnContainer)
 var btns = btnContainer.getElementsByClassName("navknapp");
@@ -50,3 +83,35 @@ for (var i = 0; i < btns.length; i++) {
 
 // Filter on page load
 filterSelection("all");
+
+// create a function which toggles add/remove from basket based on if it already is in the basket
+function toggleBasket(item) {
+    console.log("toggleBasket", item)
+    if (basket.includes(item)) {
+        removeFromBasket(item);
+    } else {
+        addToBasket(item);
+    }
+}
+
+// create a function that adds the selected item to the basket
+function addToBasket(item) {
+    console.log("addToBasket", item)
+    basket.push(item);
+    console.log("basket", basket)
+    updateCookies();
+}
+
+// create a function that removes the selected item from the basket
+function removeFromBasket(item) {
+    console.log("removeFromBasket", item)
+    basket.splice(item, 1);
+    console.log("basket", basket)
+    updateCookies();
+}
+
+// update cookies with the array
+function updateCookies() {
+    console.log("updateCookies", basket)
+    document.cookie = "basket=" + encodeURIComponent(JSON.stringify(basket));
+}
