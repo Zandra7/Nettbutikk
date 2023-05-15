@@ -129,6 +129,11 @@ h4 {
     background-color: var(--grå);
 }
 
+.produkt a {
+    text-decoration: none;
+    color: var(--svart);
+}
+
 /* --- - -- - --- PRODUKTER --- - -- - --- */
 main {
     margin: 4em 10vw 1em 10vw;
@@ -192,6 +197,7 @@ main {
     font-family: 'Bellefair', serif;
     font-size: 1rem;
     margin-left: 62.8vw;
+    cursor: pointer;
 }
 
 .fjern-alt:hover {
@@ -219,4 +225,26 @@ main {
 .kurv-produkt h3:last-child {
     min-width: 6rem;
     text-align: right;
+}
+
+/* --- - -- - --- BOKHYLLER --- - -- - --- */
+.legg-til-handlekurv {
+    background-color: var(--lLilla);
+    border: none;
+    padding: 2.5vh 5vw;
+    font-family: 'Bellefair', serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.prod-besk-beholder {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.pris {
+    margin: 1.5rem 0 0.5rem 0;
 }
