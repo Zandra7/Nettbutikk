@@ -206,6 +206,7 @@ main {
 }
 
 .fjern-alt:hover {
+    padding: 0;
     display: inline;
     cursor: pointer;
     color:var(--valgt);
