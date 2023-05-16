@@ -294,7 +294,8 @@ main {
         position: relative;
         flex-direction: column;
         place-items: center;
-        padding: 1rem 0 1rem 0;
+        margin: 1rem 0 2rem 0;
+        padding: 0;
     }
     .produkt-bilde {
         padding: 0;
@@ -307,8 +308,8 @@ main {
     }
     .hjerte {
         position: absolute;
-        top: 1rem;
-        right: 3rem;
+        top: -2rem;
+        right: 0.5rem;
     }
     .legg-til-handlekurv {
         display: block;
