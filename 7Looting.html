@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft nettbutikk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+    <top>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="svgBilde maskeLogo" src="/bilder/logo.svg"></a>
+            </div>
+            <div class="handlekurv">
+                <a href="handlekurv.html"><img class="svgBilde maskeHandlevogn" src="/bilder/handlevogn.svg"></a>
+            </div>
+        </div>
+        <div class="navbar2" id="navbar2">
+            <div><a href="#" onclick="filterSelection('all')"><h4 class="navknapp valgt">Alt</h4></div></a>
+            <div><a href="#" onclick="filterSelection('books')"><h4 class="navknapp">Bøker</h4></div></a>
+            <div><a href="#" onclick="filterSelection('other')"><h4 class="navknapp">Annet</h4></div></a>
+            <div><a href="#" onclick="filterSelection('emeralds')"><h4 class="navknapp">Emeralds</h4></div></a>
+            <div><a href="#" _onclick="filterSelection('favorites')"><h4>Favoritter</h4></div></a>
+        </div>
+    </top>
+    <main>
+        <div class="prod-besk-beholder">
+            <img class="prod-bilde produkt-bilde" src="/bilder/bok.png" alt="Bookshelf">
+            <div class="ikke-bilde">
+                <h2 class="title">Looting III</h2>
+                <h4 class="pris">Pris: 5 dia</h4>
+                <div class="knapp-hj">
+                    <a href="handlekurv.html"><button class="legg-til-handlekurv" onclick="toggleBasket(7)">Legg til i handlekurv</button></a>
+                    <img class="hjerte" src="/bilder/heart1.png" alt="favoritt">
+                </div>
+            </div>
+        </div>
+        <div class="prod-p">
+            <h3>Beskrivelse <span class="ai-gen">(AI generert)</span></h3>
+            <p class="p-prod">
+                Looting III er en kraftfull fortryllelse som kan legges til sverdet ditt i Minecraft. Denne fortryllelsen øker antallet drops du får fra fiender du bekjemper, noe som kan gi deg en betydelig boost i innsamlingen av ressurser.
+                <br><br>
+                Med Looting III kan du få mer kjøtt fra dyr, flere fjær fra kyllinger, og enda viktigere, flere sjeldne drops fra fiendtlige monstre. Dette inkluderer Ender Pearls, Spider Eyes, Gunpowder, og mer.
+                <br><br>
+                Hvis du leter etter sjeldne gjenstander som Wither Skeleton Skulls, er Looting III nesten uunnværlig. Denne fortryllelsen øker sjansene dine for å få disse sjeldne dropsene betydelig, noe som gjør det lettere for deg å fremkalle og bekjempe Wither-bossen.
+                <br><br>
+                Ved å investere i Looting III, kan du gjøre kampene dine mer lønnsomme, samle sjeldne gjenstander raskere, og oppleve mer av det Minecraft har å tilby. Ikke gå glipp av denne muligheten. Legg Looting III til ditt sverd i dag, og begynn å samle inn din rikdom!
+            </p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

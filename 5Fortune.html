@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft nettbutikk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+    <top>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="svgBilde maskeLogo" src="/bilder/logo.svg"></a>
+            </div>
+            <div class="handlekurv">
+                <a href="handlekurv.html"><img class="svgBilde maskeHandlevogn" src="/bilder/handlevogn.svg"></a>
+            </div>
+        </div>
+        <div class="navbar2" id="navbar2">
+            <div><a href="#" onclick="filterSelection('all')"><h4 class="navknapp valgt">Alt</h4></div></a>
+            <div><a href="#" onclick="filterSelection('books')"><h4 class="navknapp">Bøker</h4></div></a>
+            <div><a href="#" onclick="filterSelection('other')"><h4 class="navknapp">Annet</h4></div></a>
+            <div><a href="#" onclick="filterSelection('emeralds')"><h4 class="navknapp">Emeralds</h4></div></a>
+            <div><a href="#" _onclick="filterSelection('favorites')"><h4>Favoritter</h4></div></a>
+        </div>
+    </top>
+    <main>
+        <div class="prod-besk-beholder">
+            <img class="prod-bilde produkt-bilde" src="/bilder/bok.png" alt="Bookshelf">
+            <div class="ikke-bilde">
+                <h2 class="title">Fortune III</h2>
+                <h4 class="pris">Pris: 5 dia</h4>
+                <div class="knapp-hj">
+                    <a href="handlekurv.html"><button class="legg-til-handlekurv" onclick="toggleBasket(5)">Legg til i handlekurv</button></a>
+                    <img class="hjerte" src="/bilder/heart1.png" alt="favoritt">
+                </div>
+            </div>
+        </div>
+        <div class="prod-p">
+            <h3>Beskrivelse <span class="ai-gen">(AI generert)</span></h3>
+            <p class="p-prod">
+                Fortune III er en av de mest verdifulle fortryllelsene du kan legge til på verktøyene dine i Minecraft. Denne fortryllelsen øker mengden av drops du får når du miner eller bruker verktøyet ditt på visse blokker.
+                <br><br>
+                Forestille deg å hakke en diamantblokk og få ikke bare én, men opp til fire diamanter! Dette er kraften til Fortune III. Denne fortryllelsen virker på en rekke verdifulle blokker, inkludert diamanter, smaragder, kull, redstone, lapis lazuli, og mer.
+                <br><br>
+                Ved å investere i Fortune III, kan du dramatisk øke mengden av ressurser du samler på kort tid. Dette betyr at du kan bruke mer tid på å bygge, utforske, og nyte spillet, i stedet for å bruke timevis på å gruve etter materialer.
+                <br><br>
+                Ikke kast bort mer tid på å gruve i timene på end. Oppgrader verktøyene dine med Fortune III i dag, og oppdag hvor raskt rikdom kan akkumuleres i Minecraft-verdenen!
+            </p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
