@@ -248,15 +248,7 @@ main {
     justify-content:center;
     padding: 1rem;
     width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-    .prod-besk-beholder {
-        flex-direction: column;
-        justify-content: center;
-        margin-inline: auto;
-    }
-    
+    place-items: center;
 }
 
 .pris {
@@ -268,9 +260,6 @@ main {
     text-align: left;
     width: 50%;
     margin: auto;   
-}
-
-.prod-p {
     font-size: 1.05rem;
 }
 
@@ -294,4 +283,41 @@ main {
 
 .ikke-bilde {
     padding: 0 0 0 1.5rem;
+}
+
+.ai-gen {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .prod-besk-beholder {
+        position: relative;
+        flex-direction: column;
+        place-items: center;
+        margin: 1rem 0 2rem 0;
+        padding: 0;
+    }
+    .produkt-bilde {
+        padding: 0;
+    }
+    div .ikke-bilde {
+        padding: 0;
+    }
+    .prod-p  {
+        width: 80%;
+    }
+    .hjerte {
+        position: absolute;
+        top: -2rem;
+        right: 0.5rem;
+    }
+    .legg-til-handlekurv {
+        display: block;
+        width: 90%;
+    }
+    .knapp-hj {
+        display: block;
+        min-width: 80%;
+        width: 60vw;
+    }
 }
