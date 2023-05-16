@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft nettbutikk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+    <top>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="svgBilde maskeLogo" src="/bilder/logo.svg"></a>
+            </div>
+            <div class="handlekurv">
+                <a href="handlekurv.html"><img class="svgBilde maskeHandlevogn" src="/bilder/handlevogn.svg"></a>
+            </div>
+        </div>
+        <div class="navbar2" id="navbar2">
+            <div><a href="#" onclick="filterSelection('all')"><h4 class="navknapp valgt">Alt</h4></div></a>
+            <div><a href="#" onclick="filterSelection('books')"><h4 class="navknapp">Bøker</h4></div></a>
+            <div><a href="#" onclick="filterSelection('other')"><h4 class="navknapp">Annet</h4></div></a>
+            <div><a href="#" onclick="filterSelection('emeralds')"><h4 class="navknapp">Emeralds</h4></div></a>
+            <div><a href="#" _onclick="filterSelection('favorites')"><h4>Favoritter</h4></div></a>
+        </div>
+    </top>
+    <main>
+        <div class="prod-besk-beholder">
+            <img class="prod-bilde produkt-bilde" src="/bilder/bok.png" alt="Bookshelf">
+            <div class="ikke-bilde">
+                <h2 class="title">Efficiency IV</h2>
+                <h4 class="pris">Pris: 5 dia</h4>
+                <div class="knapp-hj">
+                    <a href="handlekurv.html"><button class="legg-til-handlekurv" onclick="toggleBasket(2)">Legg til i handlekurv</button></a>
+                    <img class="hjerte" src="/bilder/heart1.png" alt="favoritt">
+                </div>
+            </div>
+        </div>
+        <div class="prod-p">
+            <h3>Beskrivelse <span class="ai-gen">(AI generert)</span></h3>
+            <p class="p-prod">
+                Efficiency IV er en av de mest verdifulle fortryllelsene i Minecraft som du kan legge til verktøyene dine. Med denne fortryllelsen blir gruvearbeidet ditt mer effektivt enn noensinne.
+                <br><br>
+                Ønsker du å grave raskere? Efficiency IV gjør det mulig! Denne fortryllelsen øker hastigheten på hvert slag med verktøyet ditt, noe som lar deg bryte blokker raskere enn noen gang før. Enten du graver en tunnel, lager en ny bygning, eller jakter på dyrebare mineraler, vil Efficiency IV spare deg for verdifull tid.
+                <br><br>
+                Efficiency IV kan brukes på alle grunnleggende verktøy, inkludert spader, hakker, økser, og til og med skjær. Denne fortryllelsen er spesielt nyttig når du arbeider med harde materialer som obsidian, noe som kan ta evigheter å bryte uten den.
+                <br><br>
+                Ved å investere i Efficiency IV, vil du kunne utforske nye områder av spillet raskere og mer effektivt. Du vil kunne samle mer ressurser, bygge større strukturer, og til slutt ha mer tid til å nyte alt annet Minecraft har å tilby.
+                <br><br>
+                Ikke kast bort mer tid på langsom gruvedrift og huggingen av trær. Oppgrader verktøyene dine med Efficiency IV i dag og opplev den sanne kraften i effektivitet!    
+            </p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
