@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft nettbutikk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+    <top>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="svgBilde maskeLogo" src="/bilder/logo.svg"></a>
+            </div>
+            <div class="handlekurv">
+                <a href="handlekurv.html"><img class="svgBilde maskeHandlevogn" src="/bilder/handlevogn.svg"></a>
+            </div>
+        </div>
+        <div class="navbar2" id="navbar2">
+            <div><a href="#" onclick="filterSelection('all')"><h4 class="navknapp valgt">Alt</h4></div></a>
+            <div><a href="#" onclick="filterSelection('books')"><h4 class="navknapp">Bøker</h4></div></a>
+            <div><a href="#" onclick="filterSelection('other')"><h4 class="navknapp">Annet</h4></div></a>
+            <div><a href="#" onclick="filterSelection('emeralds')"><h4 class="navknapp">Emeralds</h4></div></a>
+            <div><a href="#" _onclick="filterSelection('favorites')"><h4>Favoritter</h4></div></a>
+        </div>
+    </top>
+    <main>
+        <div class="prod-besk-beholder">
+            <img class="prod-bilde produkt-bilde" src="/bilder/bok.png" alt="Bookshelf">
+            <div class="ikke-bilde">
+                <h2 class="title">Feather Falling IV</h2>
+                <h4 class="pris">Pris: 7 dia</h4>
+                <div class="knapp-hj">
+                    <a href="handlekurv.html"><button class="legg-til-handlekurv" onclick="toggleBasket(9)">Legg til i handlekurv</button></a>
+                    <img class="hjerte" src="/bilder/heart1.png" alt="favoritt">
+                </div>
+            </div>
+        </div>
+        <div class="prod-p">
+            <h3>Beskrivelse <span class="ai-gen">(AI generert)</span></h3>
+            <p class="p-prod">
+                Feather Falling IV er en kraftig fortryllelse som kan redusere skaden du tar fra fall betydelig. Med denne fortryllelsen på støvlene dine, kan du fritt utforske høyder uten å bekymre deg for potensielle fall.
+                <br><br>
+                Denne fortryllelsen er spesielt nyttig når du utforsker fjell, flytende øyer, høye bygninger, eller når du slåss mot Ender Dragon. Ingen flere uventede dødsfall fra å miste fotfeste! I tillegg reduserer Feather Falling IV også skaden du tar fra enderperler, noe som gjør det lettere å reise raskt rundt i Minecrafts verden.
+                <br><br>
+                Investering i Feather Falling IV betyr å investere i din egen sikkerhet og overlevelse i spillet. Med denne fortryllelsen kan du ta større risiko, oppdage nye høyder, og oppleve Minecraft på en helt ny måte.
+                <br><br>
+                Ikke la høydeskrekken holde deg tilbake. Ta spranget med Feather Falling IV i dag, og opplev friheten ved å utforske uten frykt for fall!
+            </p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
