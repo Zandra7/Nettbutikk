@@ -84,6 +84,11 @@ for (var i = 0; i < btns.length; i++) {
 // Filter on page load
 filterSelection("all");
 
+// create a function which toggles add/remove from basket based on if it already is in the basket
+function toggleBasket(item) {
+    addToBasket(item);
+}
+
 // create a function that adds the selected item to the basket
 function addToBasket(item) {
     console.log("addToBasket", item)
