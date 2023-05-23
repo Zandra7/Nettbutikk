@@ -298,6 +298,10 @@ main {
     padding: 0.5rem;
 }
 
+/* .plus, .minus {
+    display: inline;
+} */
+
 @media only screen and (max-width: 700px) {
     .prod-besk-beholder {
         position: relative;
