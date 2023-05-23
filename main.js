@@ -1,35 +1,14 @@
-let basket = [];
+let basket = {};
 
 document.addEventListener("DOMContentLoaded", function() {
-    function getExistingCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) {
-            return parts.pop().split(";").shift();
-        }
-    }
-
-    var basketCookie = getExistingCookie("basket");
-
-    if (!basketCookie) {
-        console.log("No 'basket' cookie found.");
-        return;
-    }
-
     try {
-        let parsedBasket = JSON.parse(decodeURIComponent(basketCookie));
-    
-        if (Array.isArray(parsedBasket) && parsedBasket.length > 0) {
-            basket = parsedBasket;
-            console.log("Loaded items from 'basket' cookie:", basket);
-        } else {
-            console.log("No items found in 'basket' cookie.");
-        }
-    } catch (error) {
-        console.error("Error parsing 'basket' cookie:", error);
-    }    
+        basket = JSON.parse(getCookie("basket"));
+    }
+    catch (error) {
+        console.log("No 'basket' cookie found.");
+        basket = {};
+    }       
 });
-
 
 function filterSelection(c) {
     var x, i;
@@ -92,7 +71,9 @@ function toggleBasket(item) {
 // create a function that adds the selected item to the basket
 function addToBasket(item) {
     console.log("addToBasket", item)
-    basket.push(item);
+    var count = basket[item] || 0;
+    count += 1;
+    basket[item] = count;
     console.log("basket", basket)
     updateCookies();
 }
@@ -100,7 +81,9 @@ function addToBasket(item) {
 // create a function that removes the selected item from the basket
 function removeFromBasket(item) {
     console.log("removeFromBasket", item)
-    basket.splice(item, 1);
+    if (item in basket) {
+        delete basket[key];
+    }
     console.log("basket", basket)
     updateCookies();
 }
@@ -108,5 +91,28 @@ function removeFromBasket(item) {
 // update cookies with the array
 function updateCookies() {
     console.log("updateCookies", basket)
-    document.cookie = "basket=" + encodeURIComponent(JSON.stringify(basket));
+    setCookie("basket", JSON.stringify(basket), 365);
+}
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == " ") {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
