@@ -19,7 +19,10 @@
     background-color: #000;
     -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
     mask: url(/bilder/handlevogn.svg) no-repeat center;
-    cursor: pointer;
+    cursor: cell; 
+    width: 2rem;
+    height: auto;
+    margin: 0 0.5rem 0.5rem 0;
 }
 
 /*______ Scrollehjul ______*/
@@ -156,7 +159,6 @@ main {
 
 .prod-og-handlevogn h3 {
     font-size: 1.25em;
-    margin: 0.5em 0 0 0;
     text-decoration: none;
 }
 
@@ -288,6 +290,12 @@ main {
 
 .ai-gen {
     font-size: 1rem;
+}
+
+.handlekurv .maskeHandlevogn {
+    height: 2.5rem;
+    width: auto;
+    padding: 0.5rem;
 }
 
 @media only screen and (max-width: 700px) {
