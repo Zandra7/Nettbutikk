@@ -16,6 +16,20 @@
 }
 
 .maskeHandlevogn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10px;
+    background-color: #000;
+    -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
+    mask: url(/bilder/handlevogn.svg) no-repeat center;
+    cursor: cell; 
+    width: 2rem;
+    height: auto;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.maskeHandlevognStor {
     background-color: #000;
     -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
     mask: url(/bilder/handlevogn.svg) no-repeat center;
@@ -127,6 +141,7 @@ h4 {
 }
 
 .produkt {
+    position: relative;
     margin: 1em 2em 1em 0;
     padding: 1rem;
     background-color: var(--grå);
