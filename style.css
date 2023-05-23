@@ -298,8 +298,15 @@ main {
     padding: 0.5rem;
 }
 
-/* .plus, .minus {
-    display: inline;
+.plus, .minus {
+    display: block;
+    width: 1rem;
+    height: auto;
+    padding: 0 1rem 0 1rem;
+}
+
+/* .plus-minus {
+    min-width: 5rem;
 } */
 
 @media only screen and (max-width: 700px) {
