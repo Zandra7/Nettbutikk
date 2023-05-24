@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft nettbutikk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+    <top>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="svgBilde maskeLogo" src="/bilder/logo.svg"></a>
+            </div>
+            <div class="handlekurv">
+                <a href="handlekurv.html"><img class="svgBilde maskeHandlevognStor" src="/bilder/handlevogn.svg"></a>
+            </div>
+        </div>
+        <div class="navbar2" id="navbar2">
+            <div><a href="#" onclick="filterSelection('all')"><h4 class="navknapp valgt">Alt</h4></a></div>
+            <div><a href="#" onclick="filterSelection('books')"><h4 class="navknapp">Bøker</h4></a></div>
+            <div><a href="#" onclick="filterSelection('other')"><h4 class="navknapp">Annet</h4></a></div>
+            <div><a href="#" onclick="filterSelection('emeralds')"><h4 class="navknapp">Emeralds</h4></a></div>
+            <div><a href="#" _onclick="filterSelection('favorites')"><h4>Favoritter</h4></a></div>
+        </div>        
+    </top>
+    <main>
+        <a href="index.html"><h1 onclick="fjernAlt()" class="tilbake">Gå tilbake</h1></a>
+        <h2 class="takk">Takk for kjøpet!</h2>
+        <img class="smil" src="bilder/smiley.svg" alt="Smilefjes">
+    </main>
+    <script src="kurv.js"></script>
+</body>
+</html>
