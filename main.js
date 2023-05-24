@@ -116,3 +116,7 @@ function getCookie(cname) {
     }
     return "";
 }
+
+function addToBasketAlert() {
+    alert("Du la til noe i handlekurven!");
+}
