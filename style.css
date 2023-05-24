@@ -76,6 +76,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: var(--mLilla);
+    height: 4rem;
 }
 
 .svgBilde {
@@ -310,7 +311,7 @@ main {
 .handlekurv .maskeHandlevogn {
     height: 2.5rem;
     width: auto;
-    padding: 0.5rem;
+    top: -0.01rem;
 }
 
 .tilbake {
