@@ -213,13 +213,19 @@ main {
     border-bottom: 0.09rem solid var(--svart);
 }
 
+.kjøp-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .kjøp {
     background-color: var(--lLilla);
     border: none;
     padding: 2.5vh 5vw;
     font-family: 'Bellefair', serif;
     font-size: 1rem;
-    margin-left: 66.8vw;
+    margin-right: 0rem;
+    margin-left: auto;
     cursor: pointer;
 }
 

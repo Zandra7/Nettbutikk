@@ -30,7 +30,8 @@
     </top>
     <main>
         <h2 class="handlekurv-ti">Handlekurv</h2>
-        <h4 class="fjern-alt" onclick="fjernAlt()">Fjern alt</h4>
+        <h4 id="clear-basket" class="fjern-alt" onclick="fjernAlt()">Fjern alt</h4>
+        <h3 id="empty-basket" style="visibility: hidden;">Handlekurven er tom!</h3>
         <div class="handle-beholder">
             <div id="1" class="kurv-produkt">
                 <h3><a href="1bokhyller.html">Bookshelves x64</a></h3>
@@ -141,7 +142,9 @@
                 <h3>5 dia</h3>
             </div>
         </div>
-        <a href="takk.html"><button class="kjøp">Kjøp</button></a>
+        <div class="kjøp-flex">
+            <a href="takk.html"><button id="buy-button" class="kjøp">Kjøp</button></a>
+        </div>
     </main>
     <script src="kurv.js"></script>
 </body>

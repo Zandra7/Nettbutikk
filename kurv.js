@@ -10,8 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
     console.log("basketCookie", basketCookie);
     basket = JSON.parse(basketCookie);
-    console.log("basket", basket);
+    console.log("basket", basket, Object.keys(basket).length);
     
+    if (Object.keys(basket).length === 0) {
+        document.getElementById("buy-button").style.visibility = "hidden";
+        document.getElementById("clear-basket").style.visibility = "hidden";
+        document.getElementById("empty-basket").style.visibility = "visible";
+    }
+
     var handleBeholder = document.getElementsByClassName("handle-beholder");
     for (var i = 0; i < handleBeholder.length; i++) {
         console.log("handleBeholder[i].id", handleBeholder[i].id);
