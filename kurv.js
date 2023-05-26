@@ -1,8 +1,8 @@
-var basket = {};
+let basket = {};
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("document.cookie", document.cookie);
-    var basketCookie = getCookie("basket");
+    let basketCookie = getCookie("basket");
     if (basketCookie === "") {
         console.log("No 'basket' cookie found.");
         return;
@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("empty-basket").style.visibility = "visible";
     }
 
-    var handleBeholder = document.getElementsByClassName("handle-beholder");
-    for (var i = 0; i < handleBeholder.length; i++) {
+    let handleBeholder = document.getElementsByClassName("handle-beholder");
+    for (let i = 0; i < handleBeholder.length; i++) {
         console.log("handleBeholder[i].id", handleBeholder[i].id);
-        var children = handleBeholder[i].children;
-        for (var j = 0; j < children.length; j++) {
+        let children = handleBeholder[i].children;
+        for (let j = 0; j < children.length; j++) {
             console.log("handleBeholder[i].children[j].id", children[j].id, (children[j].id in basket));
             if (!(children[j].id in basket)) {
                 children[j].remove();

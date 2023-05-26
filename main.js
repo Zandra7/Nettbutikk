@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function filterSelection(c) {
-    var x, i;
+    let x, i;
     console.log("filterSelection", c)
     x = document.getElementsByClassName("filterDiv");
     if (c == "all") c = "";
@@ -23,7 +23,7 @@ function filterSelection(c) {
 }
 
 function AddClass(element, name) {
-    var i, arr1, arr2;
+    let i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
     for (i = 0; i < arr2.length; i++) {
@@ -32,7 +32,7 @@ function AddClass(element, name) {
 }
 
 function RemoveClass(element, name) {
-    var i, arr1, arr2;
+    let i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
         for (i = 0; i < arr2.length; i++) {
@@ -44,15 +44,15 @@ function RemoveClass(element, name) {
 }
 
 let kategori = "Alt"
-var kategoriSelect = document.getElementById("kategori").innerHTML = "Alt";
-var btnContainer = document.getElementById("navbar2");
+let kategoriSelect = document.getElementById("kategori").innerHTML = "Alt";
+let btnContainer = document.getElementById("navbar2");
 console.log("btnContainer", btnContainer)
-var btns = btnContainer.getElementsByClassName("navknapp");
+let btns = btnContainer.getElementsByClassName("navknapp");
 console.log("btns", btns)
-for (var i = 0; i < btns.length; i++) {
+for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
         console.log("click", this)
-        var current = document.getElementsByClassName("valgt");
+        let current = document.getElementsByClassName("valgt");
         current[0].className = current[0].className.replace(" valgt", "");
         // replace kategoriselect with the text of the button
         kategoriSelect = document.getElementById("kategori").innerHTML = this.innerHTML;
@@ -71,7 +71,7 @@ function toggleBasket(item) {
 // create a function that adds the selected item to the basket
 function addToBasket(item) {
     console.log("addToBasket", item)
-    var count = basket[item] || 0;
+    let count = basket[item] || 0;
     count += 1;
     basket[item] = count;
     console.log("basket", basket)

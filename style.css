@@ -137,12 +137,12 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1em 1em 1em 0;
+    padding: 1em 0 1em 0;
 }
 
 .produkt {
     position: relative;
-    margin: 1em 2em 1em 0;
+    margin: 1em 1em 1em 1em;
     padding: 1rem;
     background-color: var(--grå);
 }
@@ -343,6 +343,13 @@ main {
 }
 
 @media only screen and (max-width: 700px) {
+    .produkt {
+        position: relative;
+        margin: 1em 0 1em 0;
+        padding: 1rem;
+        background-color: var(--grå);
+    }
+
     .prod-besk-beholder {
         position: relative;
         flex-direction: column;
@@ -350,24 +357,30 @@ main {
         margin: 1rem 0 2rem 0;
         padding: 0;
     }
+
     .produkt-bilde {
         padding: 0;
     }
+
     div .ikke-bilde {
         padding: 0;
     }
+
     .prod-p  {
         width: 80%;
     }
+
     .hjerte {
         position: absolute;
         top: -2rem;
         right: 0.5rem;
     }
+
     .legg-til-handlekurv {
         display: block;
         width: 90%;
     }
+
     .knapp-hj {
         display: block;
         min-width: 80%;
