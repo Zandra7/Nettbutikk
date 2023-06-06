@@ -11,8 +11,8 @@
 /* - -- - -- -- - --- - MASKER - --- - -- -- - -- - */
 .maskeLogo {
     background-color: #000;
-    -webkit-mask: url(/bilder/logo.svg) no-repeat center;
-    mask: url(/bilder/logo.svg) no-repeat center;
+    -webkit-mask: url(bilder/logo.svg) no-repeat center;
+    mask: url(bilder/logo.svg) no-repeat center;
 }
 
 .maskeHandlevogn {
@@ -21,8 +21,8 @@
     right: 1rem;
     z-index: 10px;
     background-color: #000;
-    -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
-    mask: url(/bilder/handlevogn.svg) no-repeat center;
+    -webkit-mask: url(bilder/handlevogn.svg) no-repeat center;
+    mask: url(bilder/handlevogn.svg) no-repeat center;
     cursor: pointer; 
     width: 2rem;
     height: auto;
@@ -31,8 +31,8 @@
 
 .maskeHandlevognStor {
     background-color: #000;
-    -webkit-mask: url(/bilder/handlevogn.svg) no-repeat center;
-    mask: url(/bilder/handlevogn.svg) no-repeat center;
+    -webkit-mask: url(bilder/handlevogn.svg) no-repeat center;
+    mask: url(bilder/handlevogn.svg) no-repeat center;
     cursor: pointer; 
     width: 2px;
     height: auto;
