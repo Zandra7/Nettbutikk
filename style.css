@@ -48,8 +48,8 @@ body {
 .navIkon {
     cursor: pointer; 
     height: 4rem;
-    width: auto;
-    padding: 0.5rem;
+    width: 4rem;
+    padding: 0.25rem;
 }
 
 /*______ Scrollehjul ______*/
