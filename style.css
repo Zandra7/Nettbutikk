@@ -19,7 +19,7 @@
     position: absolute;
     top: 0.8rem;
     right: 1rem;
-    z-index: 10;
+    z-index: 900;
     background-color: #000;
     -webkit-mask: url(bilder/handlevogn.svg) no-repeat center;
     mask: url(bilder/handlevogn.svg) no-repeat center;
