@@ -13,12 +13,12 @@
 <body>
     <top>
         <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img class="svgBilde maskeLogo" src="bilder/logo.svg" alt="butikk"></a>
-            </div>
-            <div class="handlekurv">
-                <a href="handlekurv.html"><img class="svgBilde maskeHandlevognStor" src="bilder/handlevogn.svg" alt="handlevogn"></a>
-            </div>
+            <a href="index.html" class="navIkon">
+                <img class="svgMaske maskeLogo" src="bilder/logo.svg" alt="butikk">
+            </a>
+            <a href="handlekurv.html" class="navIkon">
+                <img class="svgMaske maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+            </a>
         </div>
         <div class="navbar2" id="navbar2">
             <div><a href="#" onclick="filterSelection('all')"><h4 class="navknapp valgt">Alt</h4></a></div>
@@ -38,7 +38,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bookshelf.png" alt="Bookshelf">
                 </a>
-                <img onclick="toggleBasket(1), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(1), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="2Efficiency.html">
@@ -47,7 +49,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(2), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(2), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv emeralds">
                 <a href="3Emeralds.html">
@@ -56,7 +60,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/emerald.png" alt="Emerald">
                 </a>
-                <img onclick="toggleBasket(3), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(3), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="4FeatherFalling.html">
@@ -65,7 +71,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(4), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(4), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="5Fortune.html">
@@ -74,7 +82,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(5), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(5), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv other">
                 <a href="6Glass.html">
@@ -83,7 +93,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/glass.png" alt="Glass">
                 </a>
-                <img onclick="toggleBasket(6), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(6), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="7Looting.html">
@@ -92,7 +104,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(7), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(7), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="8Mending.html">
@@ -101,7 +115,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(8), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(8), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv other">
                 <a href="9NameTag.html">
@@ -110,7 +126,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/name-tag.png" alt="Name Tag">
                 </a>
-                <img onclick="toggleBasket(9), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(9), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="10Sharpness.html">
@@ -119,7 +137,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(10), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(10), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="11SilkTouch.html">
@@ -128,7 +148,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(11), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(11), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
             <div class="produkt filterDiv books">
                 <a href="12Unbreaking.html">
@@ -137,7 +159,9 @@
                     </div>
                     <img class="prod-bilde" src="bilder/bok.png" alt="Enchanted bok">
                 </a>
-                <img onclick="toggleBasket(12), addToBasketAlert()" class="maskeHandlevogn" src="bilder/handlevogn.svg" alt="handlevogn">
+                <div onclick="toggleBasket(12), addToBasketAlert()" class="handlevogn">
+                    <div class="svgMaske maskeHandlevogn"></div>
+                </div>
             </div>
         </div>
     </main>
